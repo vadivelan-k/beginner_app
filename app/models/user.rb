@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessible :login, :email, :password, :password_confirmation, :mobile_number
+  attr_accessible :login, :name, :email, :password, :password_confirmation, :mobile_number
   acts_as_authentic do |c|
     c.login_field = 'email'
   end
